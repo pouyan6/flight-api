@@ -2,5 +2,20 @@
 name = "flight-api"
 version = "0.1.0"
 edition = "2024"
+description = "A Rust API for managing flight data"
+authors = ["Pouyan V"]
+license = "Apache-2.0"
 
 [dependencies]
+serde = { version = "1.0.147", features = ["derive"] }
+serde_json = "1.0.88"
+rusqlite = { version = "0.29.0", features = ["bundled"] }
+chrono = { version = "0.4.26", features = ["serde"] }
+uuid = { version = "1.4.2", features = ["serde", "v4"] }
+config = "0.13.3"
+env_logger = "0.10.0"
+actix="0.13.0"
+actix-web= { version = "4.3.0" }
+actix-cors="0.6.4"
+actix-web-httpauth="0.8.0"
+
